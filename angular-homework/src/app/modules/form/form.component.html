@@ -1,0 +1,23 @@
+<div>
+    <form #form="ngForm" (submit)="submit()">
+        <div class="form-group">
+            <label for="field1">Pole nr 1</label>
+            <input type="text" ngModel name="field1" id="field1" #field1="ngModel" required />
+            <span *ngIf="(field1.invalid && field1.dirty) || (form.submitted && field1.invalid)" class="error">Pole wymagane</span>
+        </div>
+        <app-form-inner></app-form-inner>
+        <div class="form-group">
+            <button type="submit">Dalej</button>
+        </div>
+    </form>
+
+    <div *ngIf="data">
+        <span>Wartości z formularza:</span><br/>
+        <span>Pole nr 1 = {{ data.field1 }}</span><br/>
+        <span>Pole nr 2 = {{ data.field2 }}</span>
+    </div>
+
+    <div class="text-right">
+        <a routerLink="/">Powrót do strony głównej</a>
+    </div>
+</div>

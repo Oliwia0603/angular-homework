@@ -1,0 +1,32 @@
+{
+  "name": "angular-homework-task",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "build-prod": "ng build --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "build-stg": "ng build --stg"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular-devkit/build-angular": "0.1100.2",
+    "@angular/animations": "11.0.2",
+    "@angular/cli": "11.0.2",
+    "@angular/common": "11.0.2",
+    "@angular/compiler": "11.0.2",
+    "@angular/compiler-cli": "11.0.2",
+    "@angular/core": "11.0.2",
+    "@angular/forms": "11.0.2",
+    "@angular/platform-browser": "11.0.2",
+    "@angular/platform-browser-dynamic": "11.0.2",
+    "@angular/router": "11.0.2",
+    "rxjs": "~6.6.3",
+    "tslib": "^2.0.3",
+    "typescript": "4.0.5",
+    "zone.js": "~0.10.3",
+    "core-js": "^2.5.4"
+  }
+}

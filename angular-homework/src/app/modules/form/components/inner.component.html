@@ -1,0 +1,5 @@
+<div class="form-group">
+    <label for="field2">Pole nr 2</label>
+    <input type="text" ngModel name="field2" id="field2" #field2="ngModel" required />
+    <span *ngIf="(field2.invalid && field2.dirty) || (form.submitted && field2.invalid)" class="error">Pole wymagane</span>
+</div>
